@@ -1,7 +1,7 @@
 /******************************************
 Treehouse Techdegree:
 FSJS project 2 - List Filter and Pagination
-by: Diego Hernández 16/02/2019
+by: Diego Hernández 24/02/2019
 ******************************************/
 
 // Study guide for this project - https://drive.google.com/file/d/1OD1diUsTMdpfMDv677TfL1xO2CEkykSz/view?usp=sharing
@@ -19,7 +19,7 @@ by: Diego Hernández 16/02/2019
 ***/
 
 const listItem = document.querySelectorAll('li');
-console.log(listItem);
+//console.log(listItem); 
 const itemsPerPage = 10;
 
 
@@ -42,10 +42,14 @@ const showPage = (list, page) => {
 
   const startIndex = (page * itemsPerPage) - itemsPerPage;
   const endOfIndex = (page * itemsPerPage);
+ // console.log(`${startIndex}`);
+ // console.log(`${endOfIndex}`);
 
-  for (var i = 0; i < list.length; i++) {
-    if (list[i] >= startIndex && list[i] <= endOfIndex ) {
-
+  for (let i = 0; i < list.length; i++) {
+    if ([i] >= startIndex && [i] <= endOfIndex ) {
+       listItem[i].style.display = '';
+    } else {
+      listItem[i].style.display = 'none';
     }
   }
 }
@@ -56,7 +60,10 @@ const showPage = (list, page) => {
    functionality to the pagination buttons.
 ***/
 
-
+const appendPageLinks = (list) => {
+  const div = document.createElement('div');
+  
+}
 
 
 
