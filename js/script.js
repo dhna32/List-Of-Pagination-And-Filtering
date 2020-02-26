@@ -62,7 +62,9 @@ const showPage = (list, page) => {
 
 const appendPageLinks = (list) => {
   const div = document.createElement('div');
-  
+  const divPage = document.querySelector('.page');
+  div.className = 'pagination';
+  divPage.appendChild(div);
 }
 
 
