@@ -13,13 +13,5 @@ Things I learned:
 - Strengthen my skills in DevTools.
 
 
-
-BASIC DOM TREE generated in the script
-
-DIV.PAGINATION
-            ---- UL
-                ----- LI
-                      ----- A
-
 Great project :) 
 
